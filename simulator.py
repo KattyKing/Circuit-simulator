@@ -18,7 +18,7 @@ class Source:
 		
 
 def totalresistance(RESISTORS_COUNT):
-	'''Funkcion for calculating total resistance in circuit.
+	'''Function for calculating total resistance in circuit.
 		It create all resistors object and sum the resistance.'''
 	resistance = []
 	for res in range(RESISTORS_COUNT):
@@ -34,7 +34,7 @@ def totalresistance(RESISTORS_COUNT):
 	return total_resistance
 	
 def totalvoltage(SOURCES_COUNT):
-	'''Funkcion totalvoltage create source objects and sum its voltages.'''
+	'''Function totalvoltage create source objects and sum its voltages.'''
 	sources = []
 	for sour in range(SOURCES_COUNT):
 		while True:
@@ -48,12 +48,12 @@ def totalvoltage(SOURCES_COUNT):
 	return total_voltage
 
 def current(U, R):
-	'''Funkcion takes total_voltage and total_resistance and calculate total current. '''
+	'''Function takes total_voltage and total_resistance and calculate total current. '''
 	I = U / R
 	return I
 	
 def voltage_on_all_res(I, RESISTORS_COUNT):
-	'''Funkcion takes list Resistors and call method voltage_on_resistor for each one. '''
+	'''Function takes list Resistors and call method voltage_on_resistor for each one. '''
 	UR = []
 	for R in range(RESISTORS_COUNT):
 		UR.append(RESISTORS[R].voltage_on_resistor(I))
@@ -62,7 +62,7 @@ def voltage_on_all_res(I, RESISTORS_COUNT):
 
 	
 def voltage_on_one_res(I, RESISTORS_COUNT):
-	'''Funkcion takes position of object in list Resistor and for it method voltage_on_resistor. '''
+	'''Function takes position of object in list Resistor and for it method voltage_on_resistor. '''
 	while True:
 		try:
 			position = int(input('Index of resistor: ', ))
@@ -96,7 +96,7 @@ def counts():
 	
 				
 def simulator():
-	'''Funkcion simulator. Calling of previous funkcion. '''
+	'''Function simulator. Calling of previous funkcion. '''
 	while True:
 		count = counts()
 		U = totalvoltage(count[1])
