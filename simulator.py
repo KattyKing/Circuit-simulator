@@ -59,7 +59,7 @@ def voltage_on_all_res(I, RESISTORS_COUNT):
 	for R in range(RESISTORS_COUNT):
 		UR.append(RESISTORS[R].voltage_on_resistor(I))
 	for i, ur in enumerate(UR):
-		print('Voltage on resistor {} is {}'.format(i, ur))	
+		print('Voltage on resistor {} is {} V'.format(i, ur))	
 
 	
 def voltage_on_one_res(I, RESISTORS_COUNT):
@@ -70,7 +70,7 @@ def voltage_on_one_res(I, RESISTORS_COUNT):
 			if position >= RESISTORS_COUNT:
 				print('This index does not exist. Please, try it again and better.')
 			else:
-				print('Voltage on resistor {} is {}'.format(position, RESISTORS[position].voltage_on_resistor(I)))
+				print('Voltage on resistor {} is {} V'.format(position, RESISTORS[position].voltage_on_resistor(I)))
 				break
 		except ValueError:
 			print('It was not a number. Please, try it again and better.')
