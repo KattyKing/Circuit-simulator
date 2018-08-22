@@ -10,7 +10,7 @@ First step is to describe the circuit and its connection (and explain it to comp
 
 This is included in the file Adjacency_list.py. 
 
-It takes a number of Elements and put it into one list. There are required properties, id_A and id_B. Those id_s are junctions in circuit. Than there is function for creating the adjacency list, which is describing what Elements have same junctoins (or what Elements meet in one junction).
+It takes a number of Elements and put it into one list. There are required properties, id_A and id_B. Those id_X are junctions in circuit. Than there is function for creating the adjacency list, which is describing what Elements have same junctoins (or what Elements meet in one junction).
 
 Links to theory:
 
