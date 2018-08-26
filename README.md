@@ -36,12 +36,19 @@ Elements = [
 On the picture D there is a graph of circuit, where are still junctoins, but instead of elements there are only lines. This is a basis for creating an adjacency list. There is finall adjacency list for our example: first line shows what junctions are connected to junction 0, etc.
 
 AdjacencyList = [
+
 [1,5],   # junction-0: R₁, U₀
+
 [0,5],   # junction-1: R₀, U₀
+
 [1,2,6], # junction-2 ...
+
 [0,2,3], # junction-3 ...
+
 [4,6],   # junction-4 ...
+
 [3,4],   # junction-5 ...
+
 ]
 
 Other parts will follow later.
