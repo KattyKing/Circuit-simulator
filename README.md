@@ -41,7 +41,8 @@ Elements = [
 
 ]
 
-On the picture D there is a graph of the circuit.  It has junctions, but there are only lines instead of elements. This is a basis for creating an adjacency list. It is final adjacency list for our example: first line shows what junctions are connected to junction 0, etc. 
+On the picture D there is a graph of the circuit.  It has junctions, but there are only lines instead of elements. This is a basis for creating an adjacency list. 
+This is final adjacency list for our example: first line shows what junctions are connected to junction 0, etc. 
 
 AdjacencyList = [
 
