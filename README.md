@@ -6,9 +6,11 @@ First version SimulatorV1.py is a console app and it is just a simple calculator
 
 To craete full-fledged  simulator for seriál-parallel circuit is more complicated.
 
-First step is to describe the circuit and its connection (and explain it to computer in Python). The way how to do it is based on graph theory and the adjacency list.
+First step is to describe the circuit and its connection (and explain it to computer in Python). The way how to do it is based on graph theory, especially on adjacency list.
 
-This is included in the file Adjacency_list.py. 
+This contains a file Adjacency_list.py. 
+
+![alt text](https://github.com/KattyKing/Circuit-simulator/blob/master/SchemaGraph.png)
 
 It takes a number of Elements and put it into one list. There are required properties, id_A and id_B. Those id_X are junctions in circuit. Than there is function for creating the adjacency list, which is describing what Elements have same junctoins (or what Elements meet in one junction).
 
