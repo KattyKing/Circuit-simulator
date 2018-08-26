@@ -22,14 +22,24 @@ Picture A and B are simple circuits.
 Picture C is a the same circuit modified for Python. Components in scheme are described as "E" (=elements) and junctions have indexes. In Python, we will create a list of lists. It should looks like this one:
 
 ('ID-A', 'ID-B', 'Component-Type', 'Value')
+
+
 Elements = [
+
 (1, 3, 'R', 0.5),  # 0:R₀
+
 (0, 2, 'R', 2.5),  # 1:R₁
+
 (2, 3, 'R', 6.0),  # 2:R₂
+
 (3, 5, 'R', 1.5),  # 3:R₃
+
 (4, 5, 'R', 0.5),  # 4:R₄
+
 (0, 1, 'U', 18.0), # 5:U₀
+
 (2, 4, 'U', 45.0)  # 6:U₁
+
 ]
 
 
