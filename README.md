@@ -10,12 +10,44 @@ First step is to describe the circuit and its connection (and explain it to comp
 
 This contains a file Adjacency_list.py. 
 
-![alt text](https://github.com/KattyKing/Circuit-simulator/blob/master/SchemaGraph.png)
 
 It takes a number of Elements and put it into one list. There are required properties, id_A and id_B. Those id_X are junctions in circuit. Than there is function for creating the adjacency list, which is describing what Elements have same junctoins (or what Elements meet in one junction).
 
+For better understandig, there is a simple example:
+
+![alt text](https://github.com/KattyKing/Circuit-simulator/blob/master/SchemaGraph.png)
+
+Picture A and B are simple circuits. 
+
+Picture C is a the same circuit modified for Python. Components in scheme are described as "E" (=elements) and junctions have indexes. In Python, we will create a list of lists. It should looks like this one:
+
+('ID-A', 'ID-B', 'Component-Type', 'Value')
+Elements = [
+(1, 3, 'R', 0.5),  # 0:R₀
+(0, 2, 'R', 2.5),  # 1:R₁
+(2, 3, 'R', 6.0),  # 2:R₂
+(3, 5, 'R', 1.5),  # 3:R₃
+(4, 5, 'R', 0.5),  # 4:R₄
+(0, 1, 'U', 18.0), # 5:U₀
+(2, 4, 'U', 45.0)  # 6:U₁
+]
+
+
+On the picture D there is a graph of circuit, where are still junctoins, but instead of elements there are only lines. This is a basis for creating an adjacency list. There is finall adjacency list for our example: first line shows what junctions are connected to junction 0, etc.
+
+AdjacencyList = [
+[1,5],   # junction-0: R₁, U₀
+[0,5],   # junction-1: R₀, U₀
+[1,2,6], # junction-2 ...
+[0,2,3], # junction-3 ...
+[4,6],   # junction-4 ...
+[3,4],   # junction-5 ...
+]
+
+Other parts will follow later.
+
+
 Links to theory:
 
-https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)
 http://www.algolist.net/Data_structures/Graph/Internal_representation
 
