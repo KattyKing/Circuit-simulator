@@ -63,7 +63,7 @@ AdjacencyList = [
 Other parts will follow later.
 
 
-Link to theory of adjacencz list:
+Link to theory of adjacency list:
 
 http://www.algolist.net/Data_structures/Graph/Internal_representation
 
