@@ -14,7 +14,7 @@ This console app takes a number of Elements with its properties and put it into 
 
 For better understandig, there is an example:
 
-![alt text](https://github.com/KattyKing/Circuit-simulator/blob/master/SchemaGraph.png)
+![alt text](https://github.com/KattyKing/Circuit-simulator/blob/master/scheme.png)
 
 Picture A and B are simple circuits. 
 
